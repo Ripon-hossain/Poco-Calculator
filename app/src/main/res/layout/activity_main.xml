@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Calculator"
+        android:text="CALCULATOR"
         android:fontFamily="sans-serif-black"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,13 +19,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/calculator"
         android:layout_width="53dp"
         android:layout_height="55dp"
-        android:text="="
+        android:background="@drawable/calculator"
         android:textSize="28dp"
-        android:backgroundTint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,11 +33,11 @@
         app:layout_constraintVertical_bias="0.12"
 
         />
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/currency"
-        android:layout_width="53dp"
+        android:layout_width="56dp"
         android:layout_height="55dp"
-        android:text="$"
+        android:background="@drawable/currency"
         android:textSize="28dp"
         android:backgroundTint="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"

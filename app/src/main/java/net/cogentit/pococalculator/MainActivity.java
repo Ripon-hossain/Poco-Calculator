@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-
+    ImageView calculator,currency;
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0, btnac,btndel,btnpercent,btndiv,btnmulti,btnminus,btnplus,btndot,btnequal;
     EditText ShowClatulation;
     Integer res1;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        calculator=(ImageView)findViewById(R.id.calculator);
+        currency=(ImageView)findViewById(R.id.currency);
         btn1=(Button)findViewById(R.id.num1);
         btn2=(Button)findViewById(R.id.num2);
         btn3=(Button)findViewById(R.id.num3);
@@ -42,6 +46,19 @@ public class MainActivity extends AppCompatActivity {
         btndot=(Button)findViewById(R.id.dot);
         btnequal=(Button)findViewById(R.id.equal);
         ShowClatulation=(EditText)findViewById(R.id.calculation);
+
+        calculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        currency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
